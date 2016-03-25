@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -56,6 +57,13 @@
     <Compile Include="Tasks\BalancedTree\SolutionSmart.cs" />
     <Compile Include="BalancedTreeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Tasks\BalancedTree\Task.txt" />
+    <Content Include="Tasks\ClientOrdersQuery\ClientOrdersTask.sql" />
+    <Content Include="Tasks\ClientOrdersQuery\Solution.sql" />
+    <Content Include="Tasks\ClientOrdersQuery\Task.txt" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
